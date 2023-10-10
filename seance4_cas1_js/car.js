@@ -19,17 +19,14 @@ Voiture.prototype.packSport = function () {
 }
 
 let voitureStandard = new Voiture("bleu")
-let voitureFamiliale = new Voiture("noire")
-let voitureSportive = new Voiture("jaune")
-
 voitureStandard.packStandard()
+
+let voitureFamiliale = new Voiture("noire")
 voitureFamiliale.packFamilial()
+
+let voitureSportive = new Voiture("jaune")
 voitureSportive.packSport()
 
 console.log("Voiture standard : ", voitureStandard);
 console.log("Voiture familiale : ", voitureFamiliale);
 console.log("Voiture sportive : ", voitureSportive);
-
-let voitureFamiliale2 = new Voiture("rouge")
-voitureFamiliale2.packFamilial();
-console.log(voitureFamiliale2);
